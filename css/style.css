@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'General sans';
+  src: url(/assets/Fonts/GeneralSans-Medium.woff);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: General sans;
+}
+menu h3{
+ cursor: pointer;
+}
+
+#contact-Us-Button button{
+     transition: all  ease 0.5s ;
+     border: 1px solid #dadada;
+     
+}
+#contact-Us-Button button:hover{
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.rainbow-text {
+  font-size: 3em; /* Adjust as needed */
+  font-weight: bold;
+  background: linear-gradient(to right, red, orange,  green, yellow, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.loader {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 48px;
+  height: 5px;
+  background: #999;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow324 0.5s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(61, 106, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  animation: jump7456 0.5s linear infinite;
+}
+
+@keyframes jump7456 {
+  15% {
+    border-bottom-right-radius: 3px;
+  }
+
+  25% {
+    transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+    transform: translateY(18px) scale(1, .9) rotate(45deg);
+    border-bottom-right-radius: 40px;
+  }
+
+  75% {
+    transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow324 {
+
+  0%,
+    100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.2, 1);
+  }
+}
+#Service-div h1 , p{
+   font-family: gilroy;
+}
+
+#menu-wrapper h3 {
+   font-family: General sans;
+   font-weight: 100;
+}
+
+#menu-options h3{
+  transition: all 0.5s ease;
+}
+#menu-options:hover h3 {
+  transform: translateY(-100%);
+}
+
+
+#calender {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  flex-wrap: wrap;
+}
+
+#week{
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  flex-wrap: wrap;
+}
+.days:hover{
+  background-color: #FEEDD1;
+}
+.days{
+ transition: background ease 0.2s;
+cursor: pointer;
+}
+
+.div{
+  transition: all ease 0.5s;
+}
+.clicked:hover .div{
+    opacity: 100;
+}
+.Text_table{
+  font-family: gilroy;
+  font-weight: 900;
+
+}
+.Text_table:hover{
+  border: 1px solid #dadada;
+}
+
+#task:hover{
+  background:#eeeeee;
+}
+#task{
+  cursor: pointer;
+  transition: background ease 0.2s;
+}
