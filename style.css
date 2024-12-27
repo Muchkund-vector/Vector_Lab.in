@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'General sans';
+  font-family: gg;
   src: url(/GeneralSans-Medium.woff);
 }
 
@@ -15,7 +15,7 @@ html, body
 {
     height: 100%;
     width: 100%;
-    font-family: General sans;
+    font-family: gg;
 }
 menu h3{
  cursor: pointer;
@@ -111,7 +111,7 @@ menu h3{
 }
 
 #menu-wrapper h3 {
-   font-family: General sans;
+   font-family: gg;
    font-weight: 100;
 }
 
