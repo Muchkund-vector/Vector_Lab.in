@@ -16,17 +16,32 @@
   </head>
   <body>
     <!-- Loader Page -->
-    <!-- <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-20 flex items-center justify-center flex-col">
+    <!-- <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
         <div class="loader">
             <h2 class="mt-16">Loading...</h2>
         </div>
     </div> -->
 
+  <div id="sliding-window" class="h-full w-52 py-20 px-2 fixed top-0 right-0 bg-red z-10 bg-white border-l-2">
+    <div class="flex items-center justify-between px-2 py-2">
+      <div class="flex items-center jsutify-center">
+        <h1 class="text-3xl"> Menu<i class="ri-arrow-right-double-line text-3xl "></i></h1>
+       
+      </div>
+
+      <i class="ri-close-large-fill bg-[#13153A] text-white px-2 py-1 rounded-full"></i>
+    </div> 
+      
+    <h3 class="menu-slide py-2 border-b-2"><i class="ri-bard-line"></i> Our Service</h3>
+    <h3 class="menu-slide py-2 border-b-2"><i class="ri-bard-line"></i></i> About</h3>
+    <h3 class="menu-slide py-2 border-b-2 "> <i class="ri-bard-line"></i> Team</h3>
+  </div> 
+
     <!-- Main Content -->
     <div id="main">
       <!-- Navigation bar -->
       <nav
-        class="h-16 w-full bg-white flex items-center justify-between px-10 fixed top-0 left-0 right-0 border-b-[0.1px] border-[#dadae8] z-10"
+        class="h-16 w-full bg-white flex items-center justify-between px-10 fixed top-0 left-0 right-0 border-b-[0.1px] border-[#dadae8] z-20"
       >
         <!-- Logo section -->
         <div id="logo-div" class="flex items-center gap">
@@ -40,16 +55,18 @@
               alt="Logo"
             />
           </div>
-          <h1 class="rainbow-text text-2xl font-bold">ector</h1>
+          <h1 id="text_for_logo"  class="rainbow-text text-2xl font-bold">ector</h1>
+          <h2 id="text_for_tab"   class="rainbow-text text-2xl font-bold hidden">ector</h2>
         </div>
         <!-- Menu wrapper -->
         <div id="menu-wrapper" class="flex items-center justify-between gap-10">
           <!-- Menu items -->
-          <menu class="flex items-center justify-between gap-10 font- medium">
+          <menu class="menu  flex items-center justify-between gap-10 font- medium">
             <h3>Our Service</h3>
             <h3>About</h3>
             <h3>Team</h3>
           </menu>
+          <div class="menu-button px-2 py-1 border-2 rounded "><i class="ri-menu-fill"></i></div>
           <!-- Contact Us button -->
           <div id="contact-Us-Button">
             <button
@@ -183,6 +200,36 @@
                   id="headings"
                   class="flex gap-2 mt-2 border-2 rounded"
                 ></div>
+                <div class="flex-col ">
+
+                  <div class="head flex gap-2 mt-2 border-2 rounded h-10 w-full items-center justify-bewteen px-4 "> 
+                    <div  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>Task</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>Status</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>Task Progress </h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>Due Date</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center "><h2>Owner</h2></div>
+                  </div> 
+
+                  <div class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 "> 
+                    <div  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>Maths Test</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2 class="flex items-center justify-center gap-2" ><div class="porgress h-3 w-28 bg-zinc-300 rounded relative" ></div> </h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>4 Dec/ Wed</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
+                  </div> 
+
+                  <div class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 "> 
+                    <div  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>English Revision</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2><div class="porgress-2 relative h-3 w-28 bg-zinc-300 rounded" ></div> </h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>29 Dec/Sun</h2></div>
+                    <div  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
+                  </div> 
+
+                </div>
+                 
+
+
               </div>
             </div>
 
