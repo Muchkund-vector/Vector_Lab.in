@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-- Loader Page -->
-    <!-- <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
-        <div class="loader">
-            <h2 class="mt-16">Loading...</h2>
-        </div>
-    </div> -->
+      <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
+          <div class="loader">
+              <h2 class="mt-16">Loading...</h2>
+          </div>
+      </div>
 
   <div id="sliding-window" class="h-full w-52 py-20 px-2 fixed top-0 right-0 bg-red z-10 bg-white border-l-2">
     <div class="flex items-center justify-between px-2 py-2">
@@ -61,12 +61,12 @@
         <!-- Menu wrapper -->
         <div id="menu-wrapper" class="flex items-center justify-between gap-10">
           <!-- Menu items -->
-          <menu class="menu  flex items-center justify-between gap-10 font- medium">
+          <menu id="menu" class="menu flex items-center justify-between gap-10 font-medium">
             <h3>Our Service</h3>
             <h3>About</h3>
             <h3>Team</h3>
           </menu>
-          <div class="menu-button px-2 py-1 border-2 rounded "><i class="ri-menu-fill"></i></div>
+          <div id="menu-button"  class=" px-2 py-1 border-2 rounded "><i class="ri-menu-fill"></i></div>
           <!-- Contact Us button -->
           <div id="contact-Us-Button">
             <button
@@ -85,7 +85,7 @@
           class="h-full w-full flex items-center justify-between px-10"
         >
           <!-- Left Section -->
-          <div id="landing-page-left" class="h-full w-1/2">
+          <div id="landing-page-left" class="h-full w-1/2 flex items-center justify-center mt-2">
             <div
               id="landing-page-left-content"
               class="h-full w-full flex flex-col items-start justify-center"
@@ -95,10 +95,10 @@
                 class="flex items-center mb-3"
               >
                 <i class="ri-fire-fill text-yellow-500"></i>
-                <h3>Struggling With Work Load?</h3>
+                <h3 class= " whitespace-nowrap">Struggling With Work Load?</h3>
               </div>
               <div id="landing-page-left-content2">
-                <h1 class="text-5xl">
+                <h1 class="text-5xl  ">
                   Simplifying Task Management, <br />
                   Enabling Growth – Focus with <br />
                 </h1>
@@ -120,7 +120,7 @@
               </div>
               <div id="contact-Us-Button" class="mt-4 flex gap-3">
                 <button
-                  class="px-7 py-2 bg-[#13153A] rounded-xl font-bold text-white"
+                  class="px-7 py-2 bg-[#13153A] rounded-xl font-bold text-white whitespace-nowrap"
                 >
                   Explore the Vectorlab
                   <i class="ri-arrow-right-double-line"></i>
@@ -244,13 +244,14 @@
                 ></label>
                 <input
                   type="text"
+                  id="Text_table"
                   class="Text_table w-30 h-10 text-3xl rounded px-1"
                   value="Exa-Connect"
                 />
               </div>
 
               <div>
-                <input type="text" value="Our Objective" />
+                <input id="Text_table" type="text" value="Our Objective" />
               </div>
 
               <div class="taskt-wrapper">
@@ -313,6 +314,7 @@
     <script src="./js/calender.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/todo.js"></script>
+    <script src="./js/menuResponsive.js"></script>
     <!-- Custom Script -->
    
   </body>

@@ -53,7 +53,7 @@ calendarData.forEach((entry) => {
         </div>
     
         `;
-  } else if (entry.date == 29) {
+  } else if (entry.date == 30) {
     calendarContainer.innerHTML += `
         <div class="clicked h-10 w-10 flex items-center justify-center mt-1 bg-red-300 rounded-3xl relative cursor-pointer ">
             ${entry.date}

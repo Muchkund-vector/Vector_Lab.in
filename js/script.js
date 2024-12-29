@@ -25,15 +25,7 @@ tl.from('#landing-page-left-content1', {
 
   }, "same")
 
-//   tl.from('#landing-page-left-content1', { 
-//     x: 10,
-//     duration: 0.8,
-//     delay: 1,
-//     ease: 'power3'
 
-//   })
-
-// color:#ABF0FF #FEEDD1
 
 
 gsap.from("#Service-div", {
