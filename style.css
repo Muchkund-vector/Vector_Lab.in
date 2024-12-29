@@ -1,11 +1,11 @@
 @font-face {
   font-family: gg;
-  src: url(/GeneralSans-Medium.woff);
+  src: url(/assets/GeneralSans-Medium.woff);
 }
 
 @font-face {
   font-family: Gil;
-  src: url(/Gilroy-ExtraBold.woff2);
+  src: url(/assets/Gilroy-ExtraBold.woff2);
 }
 
 
