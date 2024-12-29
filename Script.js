@@ -201,3 +201,4 @@ menu_button_close.addEventListener("click", () => {
         ease: "power4",
     });
  });
+

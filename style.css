@@ -3,6 +3,12 @@
   src: url(/GeneralSans-Medium.woff);
 }
 
+@font-face {
+  font-family: Gil;
+  src: url(/Gilroy-ExtraBold.woff2);
+}
+
+
 
 
 *{
@@ -107,7 +113,11 @@ menu h3{
   }
 }
 #Service-div h1 , p{
-   font-family: gilroy;
+   font-family: Gil; 
+}
+
+#Service-div p{
+  font-weight: lighter;
 }
 
 #menu-wrapper h3 {
@@ -149,7 +159,7 @@ cursor: pointer;
     opacity: 100;
 }
 .Text_table{
-  font-family: gilroy;
+  font-family: Gil;
   font-weight: 900;
 
 }
@@ -218,6 +228,9 @@ cursor: pointer;
 }
 
 @media (max-width: 900px) {
+  #main{
+    overflow: hidden;
+  }
   .menu {
     display: none;
     opacity: 0;
@@ -226,6 +239,7 @@ cursor: pointer;
     display: block;
     opacity: 1;
   }
+
   #landing-page-right img {
    transform: scale(2); 
   }
@@ -244,9 +258,15 @@ cursor: pointer;
  }
  #text_for_tab{
   display: block;
- }
-
+  }
  #menu-wrapper{
     gap: 10px;
  }
+ #page2-service{
+  flex-direction: column;
+ }
+ #Service-div{
+  width: 100%;
+ }
+
 }
