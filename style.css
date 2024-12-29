@@ -180,6 +180,9 @@ border: 2px solid black;
   cursor: pointer;
   transition: background ease 0.2s;
 }
+#landing-page-left-content2 h1{
+  text-align: start;
+}
 
 .porgress::before{
   content: " ";
@@ -244,7 +247,9 @@ border: 2px solid black;
     display: block;
     opacity: 1;
   }
-
+  #Service-div{
+    width: 100vw;
+   }
   #landing-page-right img {
    transform: scale(2); 
   }
@@ -313,15 +318,33 @@ border: 2px solid black;
   flex-direction: column;
  }
  #Service-div{
-  width: 100%;
+  width: 90vw;
  }
 
+ #Service-div p,h1 {
+    text-align: center;
+ }
+ #Service-div p,h1 {
+  text-align: center;
+}
+
+ #Service-div h1 {
+  line-height: 0.9;
+}
  #nav{
   justify-content: space-around;
-  padding: 0 10px;
+  padding: 0 1px;
  }
-
-
+ #progress-bar
+ {
+  display: none;
+ }
+ #Text_table{
+  width: 90%;
+ }
+ #task{
+  padding-top: 70px;
+ }
 
 
 }
