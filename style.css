@@ -1,14 +1,12 @@
 @font-face {
-  font-family: gg;
-  src: url(./assets/GeneralSans-Medium.woff);
+  font-family: 'gg';
+  src: url('./assets/GeneralSans-Medium.woff') format('woff');
 }
 
 @font-face {
-  font-family: Gil;
-  src: url(./assets/Gilroy-ExtraBold.woff2);
+  font-family: 'Gil';
+  src: url('./assets/Gilroy-ExtraBold.woff2') format('woff2');
 }
-
-
 
 
 *{
