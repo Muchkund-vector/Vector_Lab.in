@@ -389,6 +389,9 @@ border: 2px solid black;
   #ex-conncet-wrapper{
     justify-content: center;
   }
+  #headings{
+    display: none;
+  }
 
 
 }
