@@ -1,5 +1,4 @@
 
-
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
@@ -19,3 +18,11 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+
+document.querySelector('#Our_Service_button').addEventListener('click', () => {
+  const target = document.querySelector('#page2')
+  lenis.scrollTo(target, { offset: 0, immediate: false,duration: 1 })
+})
+
+
