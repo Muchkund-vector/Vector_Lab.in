@@ -111,9 +111,10 @@ menu h3{
   }
 }
 #Service-div h1 , p{
-   font-family: Gil;
- 
+   font-family: Gil,sans-serif ;
+   font-weight: lighter;
 }
+
 
 #Service-div p{
   font-weight: lighter;
@@ -131,6 +132,9 @@ menu h3{
 #menu-options:hover h3 {
   transform: translateY(-100%);
 }
+#img-on-response{
+  display: none;
+ }
 
 
 #calender {
@@ -235,6 +239,15 @@ border: 2px solid black;
   border: 1px solid #dadada;
   
 }
+#text-exconnect{
+  display: none;
+ }
+
+#progress-task:hover{
+  background:#eeeeee;
+ }
+
+
 
 @media (max-width: 900px) {
   #main{
@@ -340,11 +353,22 @@ border: 2px solid black;
   display: none;
  }
  #Text_table{
-  width: 90%;
+  width: 65%;
  }
  #task{
-  padding-top: 70px;
+  display: none;
  }
-
+ #calender-conrainer{
+  display: none;
+ }
+ #img-on-response{
+  display: block;
+ }
+ #text-exconnect{
+  display: block;
+ }
+ #text-objective{
+ display: none;
+ }
 
 }

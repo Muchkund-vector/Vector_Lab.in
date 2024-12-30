@@ -14,6 +14,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
+
+
+  <style>
+    @media (min-width: 480px) {
+      .xs\:mt-2 {
+        margin-top: 0.5rem; /* Equivalent to h-96 */
+      }
+    }
+  </style>
+  
+  
+
   <body>
     <!-- Loader Page -->
       <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
@@ -165,15 +177,21 @@
             </div>
             <div
               id="Service-div"
-                  class=" h-96 w-96 border-2 border-[#dadada] rounded-xl flex items-center justify-start flex-col p-4 mt-4 bg-white mt-1"
+                  class=" h-auto w-96 border-2 border-[#dadada] rounded-xl flex items-center justify-start flex-col p-4 mt-4 bg-white mt-1"
             >
               <h1 class="text-3xl font-bold">
                 <i class="ri-bard-fill"></i>Planner/Scheduler
               </h1>
-              <p class="text-center leading-4">
+              <p class="text-center leading-4 ">
                 Stay ahead with our Planner tool—set goals, manage time, and
                 achieve academic success effortlessly!
               </p>
+               
+               <div id="img-on-response" class="h-40 w-full flex items-center justify-center mt-2 overflow-hidden">
+                 <img src="./assets/undraw_online-organizer_1kdy.png" alt="Planner" />
+
+               </div>
+
               <div id="calender-conrainer" class="h-full w-full mt-2 rounded">
                 <div class="date-week">
                   <h3>December 2024</h3>
@@ -187,20 +205,24 @@
           <div>
             <div
               id="Service-div"
-              class="h-56 w-full bg-white border-2 b rounded-xl p-4"
+              class="Service-div h-auto xm:h-96 md:h-56 w-full bg-white border-2 b rounded-xl px-4 py-2 "
             >
               <h1 class="text-3xl font-bold">
                 <i class="ri-bard-fill"></i>Parent & Colleague Support
               </h1>
-              <p class="leading-4">
+              <p class="leading-4 xm:mt-2">
                 Collaborative success: Empowering parents and colleagues with
                 insights to support student growth.
               </p>
-              <div id="progress" class="h-28 w-full mt-2 flex flex-col">
+              <div id="progress" class="h-34 w-full mt-2 flex flex-col">
                 <div
                   id="headings"
                   class="flex gap-2 mt-2 border-2 rounded"
-                ></div>
+                >
+              </div>
+              <div id="img-on-response" class="h-40 w-full flex items-center justify-center mt-2 overflow-hidden">
+                <img src="./assets/undraw_educator_6dgp.png" alt="Planner" />
+              </div>
                 <div id="progress-bar" class="flex-col ">
 
                   <div class="head flex gap-2 mt-2 border-2 rounded h-10 w-full items-center justify-bewteen px-4 "> 
@@ -211,20 +233,20 @@
                     <div  class=" w-36 h-full flex justify-center items-center "><h2>Owner</h2></div>
                   </div> 
 
-                  <div class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 "> 
-                    <div  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>Maths Test</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2 class="flex items-center justify-center gap-2" ><div class="porgress h-3 w-28 bg-zinc-300 rounded relative" ></div> </h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>4 Dec/ Wed</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
+                  <div id="progress-task" class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 cursor-pointer "> 
+                    <div id="progress-task"  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>Maths Test</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2 class="flex items-center justify-center gap-2" ><div class="porgress h-3 w-28 bg-zinc-300 rounded relative" ></div> </h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>4 Dec/ Wed</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
                   </div> 
 
-                  <div class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 "> 
-                    <div  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>English Revision</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2><div class="porgress-2 relative h-3 w-28 bg-zinc-300 rounded" ></div> </h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>29 Dec/Sun</h2></div>
-                    <div  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
+                  <div id="progress-task"  class="head flex gap-2  border-r-2 border-l-2  border-b-2  rounded h-10 w-full items-center justify-bewteen px-4 cursor-pointer "> 
+                    <div id="progress-task"  class=" w-36 h-full flex items-center justify-center border-r-2" ><h2>English Revision</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>In Progress</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2><div class="porgress-2 relative h-3 w-28 bg-zinc-300 rounded" ></div> </h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center border-r-2"><h2>29 Dec/Sun</h2></div>
+                    <div id="progress-task"  class=" w-36 h-full flex justify-center items-center "><h2><div class="h-8 w-8 rounded-full bg-red-100 flex items-center justify-center ">VR</div></h2></div>
                   </div> 
 
                 </div>
@@ -252,7 +274,13 @@
               </div>
 
               <div>
-                <input id="Text_table" type="text" value="Our Objective" class="hover:border-2 " />
+                <input id="text-objective" type="text" value="Our Objective" class="hover:border-2 " />
+              </div>
+              <p id="text-exconnect" class="leading-4 xm:mt-2">
+                We believe in collaborative success. parents and colleagues can now access insights to support student growth, making achievement a shared journey"
+              </p>
+              <div id="img-on-response" class="h-40 w-full flex items-center justify-center mt-2 overflow-hidden">
+                <img src="./assets/undraw_online-connection_c56e.png" alt="Planner" />
               </div>
 
               <div class="taskt-wrapper">
