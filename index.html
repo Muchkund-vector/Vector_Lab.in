@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./leadmark.css">
     <!-- Link to Remix Icon CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -14,6 +15,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>VectorLab</title>
      <link rel="shortcut icon" href="./assets/Vector@logo.png" type="image/x-icon">
+     
   </head>
 
 
@@ -29,11 +31,11 @@
 
   <body>
     <!-- Loader Page -->
-      <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
+      <!-- <div id="loader-page" class="h-full w-full fixed top-0 bg-white z-30 flex items-center justify-center flex-col">
           <div class="loader">
               <h2 class="mt-16">Loading...</h2>
           </div>
-      </div>
+      </div> -->
 
   <div id="sliding-window" class="h-full w-52 py-20 px-2 fixed top-0 right-0 bg-red z-10 bg-white border-l-2">
     <div class="flex items-center justify-between px-2 py-2">
@@ -46,7 +48,7 @@
     </div> 
       
     <h3 id="Our_Service_button-mobile"  class="menu-slide py-2 border-b-2"><i class="ri-bard-line"></i> Our Service</h3>
-    <h3 class="menu-slide py-2 border-b-2"><i class="ri-bard-line"></i></i> About</h3>
+    <h3  id="Our_About_button-mobile" class="menu-slide py-2 border-b-2"><i class="ri-bard-line"></i></i> About</h3>
     <h3 class="menu-slide py-2 border-b-2 "> <i class="ri-bard-line"></i> Team</h3>
   </div> 
 
@@ -77,7 +79,7 @@
           <!-- Menu items -->
           <menu id="menu" class="menu flex items-center justify-between gap-10 font-medium">
             <h3 id="Our_Service_button">Our Service</h3>
-            <h3>About</h3>
+            <h3 id="Our_About_button">About</h3>
             <h3>Team</h3>
           </menu>
           <div id="menu-button"  class=" px-2 py-1 border-2 rounded "><i class="ri-menu-fill"></i></div>
@@ -106,10 +108,10 @@
             >
               <div
                 id="landing-page-left-content1"
-                class="flex items-center mb-3"
+                class="flex items-center"
               >
                 <i class="ri-fire-fill text-yellow-500"></i>
-                <h3 class= " whitespace-nowrap">Struggling With Work Load?</h3>
+                <h3 class= " whitespace-nowrap ">Struggling With Work Load?</h3>
               </div>
               <div id="landing-page-left-content2">
                 <h1 class="text-5xl">
@@ -150,7 +152,7 @@
           <!-- Right Section -->
           <div
             id="landing-page-right"
-            class="h-full w-1/2 flex items-center justify-center border-l-[0.1px] border-[#dadae8]"
+            class="h-full w-1/2 flex items-center justify-center"
           >
             <img src="./assets/Student boy.gif" alt="Student" />
           </div>
@@ -322,7 +324,105 @@
         </div>
       </div>
 
-      <div id="page3" class="h-screen w-full"></div>
+      <div id="page3" class="h-screen w-full p-10  flex items-center justify-start flex-col sm:overflow-hidden sm:relative  ">
+      
+        <div class="sm:h-full sm:w-full  rounded-3xl  sm:flex sm:items-start sm:justify-center sm:flex-col sm:mt-2 sm:p-36 sm:relative ">
+          <h1 class="text-5xl text-center sm:text-4xl sm:text-start"><i class="ri-bard-fill text-4xl"></i>About us</h1>
+          <h4 class="text-center text-xl opacity-70 sm:w-[70%] sm:text-left z-10 ">VectorLab is dedicated to helping students achieve academic success through innovative task management tools and strong community support. Our platform offers students the resources they need to stay organized, connect with peers, and access support from mentors and family. We believe that every student deserves the tools to grow, succeed, and thrive in a connected community.</h4>
+        </div>
+        <div class="sm:h-full sm:w-full  rounded-3xl  sm:flex sm:items-start sm:justify-center sm:flex-col sm:mt-2 sm:p-36 sm:absolute sm:top0">
+          <div  id="popup"  class="sm:h-48 sm:w-96 absolute sm:left-[40%] sm:top-[1%] "><img class="hidden sm:block h-full w-full object  rounded border-2 rounded-xl "  src="./assets/Data Detox- FireFox - Jiaqi Wang.gif" alt=""></div>
+          <div  id="popup"  class="sm:h-56 sm:w-72  absolute sm:left-[70%] sm:top-[30%] "><img class="hidden sm:block h-full w-full object  rounded border-2 rounded-xl "  src="./assets/images/Essential Guide to Burnout_ Overcoming Excess Stress (gif).gif" alt=""></div>
+           <div id="popup" class="sm:h-48 sm:w-80 absolute sm:left-[45%] sm:top-[62%] "><img class="hidden sm:block h-full w-full object  rounded border-2 rounded-xl "  src="./assets/Vidico __ Agency.gif" alt=""></div>
+        </div>
+      </div>
+
+      <div id="page4" class="h-screen w-full p-32">
+        <h1 id="team" class="text-5xl text-center sm:text-4xl sm:text-start "><i class="ri-bard-fill text-4xl"></i>Our Team</h1>
+        <div  class="sm:flex sm:justify-center sm:items-start gap-2 mt-5"  >
+          <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+             <div class="flex items-center justify-center gap-2">
+              <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+                <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+              </div>
+             <div class="h-1 w-[70%]">
+               <div><h1 class="text-base" >Akanksha Dhole</h1></div>
+               <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+             </div>
+             </div>
+          </div>
+          <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+            <div class="flex items-center justify-center gap-2">
+              <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+                <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+              </div>
+            <div class="h-1 w-[70%]">
+              <div><h1 class="text-base" >Aditya Janrao</h1></div>
+              <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+            </div>
+            </div>
+         </div>    <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+          <div class="flex items-center justify-center gap-2">
+            <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+              <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+            </div>
+          <div class="h-1 w-[70%]">
+            <div><h1 class="text-base" >Priyanshu Kayarkar</h1></div>
+            <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+          </div>
+          </div>
+       </div>   
+       
+       <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+        <div class="flex items-center justify-center gap-2">
+          <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+            <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+          </div>
+        <div class="h-1 w-[70%]">
+          <div><h1 class="text-base" >Akshata Parghane</h1></div>
+          <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+        </div>
+        </div>
+     </div>
+        </div> 
+        <div  class="sm:flex sm:justify-center sm:items-start gap-2 mt-2"  >
+          <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+            <div class="flex items-center justify-center gap-2">
+              <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+                <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+              </div>
+            <div class="h-1 w-[70%]">
+              <div><h1 class="text-base" >Chirayu Patle</h1></div>
+              <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+            </div>
+            </div>
+         </div>     
+          <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+          <div class="flex items-center justify-center gap-2">
+            <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+              <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+            </div>
+          <div class="h-1 w-[70%]">
+            <div><h1 class="text-base" >Prerna Rahangdale</h1></div>
+            <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+          </div>
+          </div>
+       </div>
+       <div id="popup-1"  class="h-auto w-96 mt-2 rounded-xl border-2 border-dashed p-3 ">
+        <div class="flex items-center justify-center gap-2">
+          <div class="h-16 w-16 bg-red-100 border-2 rounded-full overflow-hidden">
+            <img  class = "h-full w-full object-cover" src="./assets/default profile picture.jpeg" alt="">
+          </div>
+        <div class="h-1 w-[70%]">
+          <div><h1 class="text-base" >Muchkundraje Thote</h1></div>
+          <div class="h-1 w-[70%] bg-red-100 border-2 rounded"></div>
+        </div>
+        </div>
+     </div>
+        </div>
+      </div>
+
+  
     </div>
 
     <!-- GSAP Scripts -->
@@ -345,6 +445,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/menuResponsive.js"></script>
+    <script src="./js/popup.js"></script>
     <!-- Custom Script -->
    
   </body>

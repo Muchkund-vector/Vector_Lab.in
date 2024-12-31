@@ -6,6 +6,7 @@
 @font-face {
   font-family: 'Gil';
   src: url('./assets/Gilroy-ExtraBold.woff2') format('woff2');
+  font-weight: 100;
 }
 
 
@@ -116,7 +117,9 @@ menu h3{
    font-weight: lighter;
 
 }
-
+#main{
+  overflow: hidden;
+}
 
 
 #Service-div p{
@@ -214,6 +217,7 @@ border: 2px solid black;
 #menu {
   display: flex;
   opacity: 1;
+
 }
 #menu-button {
   display: none;
@@ -225,6 +229,10 @@ border: 2px solid black;
 #sliding-window {
   transform: translateX(100%);
 
+}
+
+#page3 h1{
+  font-family: Gil;
 }
 
 #sliding-window h3:hover {
@@ -249,6 +257,17 @@ border: 2px solid black;
 
 #progress-task:hover{
   background:#eeeeee;
+ }
+
+ #page4 h1 {
+  font-family: gg;
+  font-weight: 100;
+ }
+ #page4 #team {
+  font-family: Gil;
+  font-weight: 100;
+  opacity: 0.7;
+
  }
 
 
@@ -392,6 +411,10 @@ border: 2px solid black;
   #headings{
     display: none;
   }
+  #landing-page-left-content1{
+    margin-bottom: -2px;
+  }
 
 
 }
+
