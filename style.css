@@ -263,13 +263,26 @@ border: 2px solid black;
   font-family: gg;
   font-weight: 100;
  }
- #page4 #team {
+ #page4 #team h1 {
   font-family: Gil;
   font-weight: 100;
   opacity: 0.7;
 
  }
 
+ #underline::before{
+  content: " ";
+  width: 0;
+  border:2px solid #7978ca; 
+  background: #7978ca;
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  }
+
+underline:hover::before{
+  width: 100%;
+}
 
 
 @media (max-width: 900px) {
