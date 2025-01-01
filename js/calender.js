@@ -28,8 +28,8 @@ const currentDate = new Date();
 const dayOfMonth = currentDate.getDate(); // Extract the day of the month (1-31)
 console.log(dayOfMonth);
 
-const year = 2024;
-const month = 11; // December
+const year = 2025;
+const month = 0; // December
 const calendarData = getDatesAndWeeks(year, month);
 
 // Add empty divs for days before the first day of the month

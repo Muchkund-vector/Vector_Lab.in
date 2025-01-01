@@ -30,4 +30,10 @@ document.querySelector('#Our_About_button').addEventListener('click', () => {
   lenis.scrollTo(target, { offset: 0, immediate: false,duration: 1 })
 })
 
+document.querySelector('#Our_Team_button').addEventListener('click', () => {
+  console.log("click")
+  const target = document.querySelector('#page4')
+  lenis.scrollTo(target, { offset: 0, immediate: false,duration: 1 })
+})
+
 

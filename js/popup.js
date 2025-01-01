@@ -31,7 +31,7 @@ gsap.from(popup1, {
     duration: 0.7,
     ease: "power4",
     stagger: 0.1,
-});
+  });
 
 
 

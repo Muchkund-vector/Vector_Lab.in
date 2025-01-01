@@ -9,6 +9,14 @@
   font-weight: 100;
 }
 
+@font-face {
+  font-family: 'pp';
+  src: url('./assets/PPMori-Regular.otf') format('opentype');
+  
+}
+
+
+
 
 *{
     margin: 0;
@@ -263,11 +271,11 @@ border: 2px solid black;
   font-family: gg;
   font-weight: 100;
  }
- #page4 #team h1 {
-  font-family: Gil;
-  font-weight: 100;
-  opacity: 0.7;
-
+ 
+ #team h1{
+  font-family: "pp";  
+   font-weight: 900;
+   
  }
 
  #underline::before{
@@ -280,10 +288,15 @@ border: 2px solid black;
   border-radius: 10px;
   }
 
-underline:hover::before{
-  width: 100%;
+  #preivew{
+    font-family: "pp mori";
+    font-weight: 900;
+  }
+#popup{
+  border: 2px solid #dadada;
+  border-radius: 12px;
+  overflow: hidden;
 }
-
 
 @media (max-width: 900px) {
   #main{
