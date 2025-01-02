@@ -42,7 +42,7 @@ menu h3{
 }
 #contact-Us-Button button:hover{
   background: white;
-  color: black;
+  color: #13153A !important;
   transform: scale(1.1);
 }
 

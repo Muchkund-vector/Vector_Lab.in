@@ -29,7 +29,7 @@ const dayOfMonth = currentDate.getDate(); // Extract the day of the month (1-31)
 console.log(dayOfMonth);
 
 const year = 2025;
-const month = 0; // December
+const month = new Date().getMonth()  ; // December
 const calendarData = getDatesAndWeeks(year, month);
 
 // Add empty divs for days before the first day of the month
@@ -68,3 +68,7 @@ calendarData.forEach((entry) => {
             </div>`;
   }
 });
+
+
+const Month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+document.querySelector(".date-week h3").innerHTML += Month[month] + " " + year;

@@ -36,4 +36,9 @@ document.querySelector('#Our_Team_button').addEventListener('click', () => {
   lenis.scrollTo(target, { offset: 0, immediate: false,duration: 1 })
 })
 
+document.querySelector('#contact-us-Button').addEventListener('click', () => {
+  console.log("click")
+  const target = document.querySelector('#page5')
+  lenis.scrollTo(target, { offset: 0, immediate: false,duration: 1 })
+})
 
