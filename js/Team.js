@@ -24,29 +24,29 @@ const Team = [
 
   {
     name: "Akshata Parghane",
-    linkedin: "",
-    github: "",
-    image: "./assets/default profile picture.jpeg",
-    Num : false,
+    linkedin: "https://www.linkedin.com/in/akshataparghane/",
+    github: "https://github.com/Akshataparghane",
+    image: "./assets/Akshata Parghane.jpg",
+    Num : true,
   },
   {
     name: "Chirayu Patle",
     linkedin: "https://www.linkedin.com/in/chirayu-patle-a78502290/",
     github: "https://github.com/ChirayuPatle",
-    image: "./assets/default profile picture.jpeg",
-    Num : false,
+    image: "./assets/chirayu.png",
+    Num : true,
   },
   {
     name: "Prerna Rahangdale",
-    linkedin: "",
-    github: "",
-    image: "./assets/default profile picture.jpeg",
-    Num : false,
+    linkedin: "https://www.linkedin.com/in/prerna-rahangdale-b2b7ab281",
+    github: "https://github.com/Prernarahangdale05 ",
+    image: "./assets/prena101.jpg",
+    Num : true,
   },
   {
     name: "Muchkundraje Thote",
-    linkedin: "",
-    github: "",
+    linkedin: "https://www.linkedin.com/in/muchkund-thote/",
+    github: "https://github.com/MUCHKUNDRAJE",
     image: "./assets/Muchkund.jpg",
     Num : true,
   },
@@ -62,10 +62,10 @@ Team.forEach((member) => {
  {
   team.innerHTML += `
 
-<div id="popup-1" class="h-80 w-72  rounded-xl ">
+<div id="popup-1" class="position  h-80 w-72  rounded-xl ">
         
           <div class="h-64 w-72 bg-green-100 rounded-xl overflow-hidden border-2 relative">
-            <img class="h-full w-full object-cover object-top" src="${member.image}" alt="">
+            <img class="h-full w-full object-cover object-top " src="${member.image}" alt="">
           </div>
       
   
